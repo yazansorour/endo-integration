@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{hospital_code}-{procedure_name}",
+ "creation": "2024-10-10 13:35:15.494939",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hospital",
+  "hospital_code",
+  "column_break_tsohw",
+  "active",
+  "procedure_info_section",
+  "procedure_name",
+  "procedure_deception",
+  "column_break_cigea",
+  "snomed_ct_code",
+  "icd_10_am_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "hospital",
+   "fieldtype": "Link",
+   "label": "Hospital",
+   "options": "Hospitals"
+  },
+  {
+   "fetch_from": "hospital.hospital_suffix",
+   "fieldname": "hospital_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Hospital Code"
+  },
+  {
+   "fieldname": "column_break_tsohw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "procedure_info_section",
+   "fieldtype": "Section Break",
+   "label": "Procedure Info"
+  },
+  {
+   "fieldname": "procedure_name",
+   "fieldtype": "Data",
+   "label": "Procedure Name"
+  },
+  {
+   "fieldname": "procedure_deception",
+   "fieldtype": "Data",
+   "label": "Procedure Deception"
+  },
+  {
+   "fieldname": "column_break_cigea",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "snomed_ct_code",
+   "fieldtype": "Data",
+   "label": "SNOMED CT Code"
+  },
+  {
+   "fieldname": "icd_10_am_code",
+   "fieldtype": "Data",
+   "label": "ICD 10-AM-Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-10 13:38:00.473290",
+ "modified_by": "Administrator",
+ "module": "endoscopy",
+ "name": "Endo Procedure",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "procedure_name,snomed_ct_code,icd_10_am_code",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "procedure_name",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

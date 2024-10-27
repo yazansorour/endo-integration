@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{hospital}-{modalities_code}",
+ "creation": "2024-10-10 14:49:54.014532",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "modalities_info_section",
+  "modalities_name",
+  "modalities_code",
+  "column_break_2pzpr",
+  "hospital",
+  "connection_info_section",
+  "import_path",
+  "export_path",
+  "column_break_xcpon",
+  "report_path"
+ ],
+ "fields": [
+  {
+   "fieldname": "modalities_info_section",
+   "fieldtype": "Section Break",
+   "label": "Modalities Info"
+  },
+  {
+   "fieldname": "modalities_name",
+   "fieldtype": "Data",
+   "label": "Modalities Name"
+  },
+  {
+   "fieldname": "modalities_code",
+   "fieldtype": "Data",
+   "label": "Modalities Code"
+  },
+  {
+   "fieldname": "column_break_2pzpr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hospital",
+   "fieldtype": "Link",
+   "label": "Hospital",
+   "options": "Hospitals"
+  },
+  {
+   "fieldname": "connection_info_section",
+   "fieldtype": "Section Break",
+   "label": "Connection Info"
+  },
+  {
+   "fieldname": "import_path",
+   "fieldtype": "Data",
+   "label": "Import Path "
+  },
+  {
+   "fieldname": "export_path",
+   "fieldtype": "Data",
+   "label": "Export Path"
+  },
+  {
+   "fieldname": "column_break_xcpon",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_path",
+   "fieldtype": "Data",
+   "label": "Report Path"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-10 14:53:15.481210",
+ "modified_by": "Administrator",
+ "module": "endoscopy",
+ "name": "Endoscopy Modalities",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "modalities_name",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

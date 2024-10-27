@@ -1,0 +1,178 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{#######}-{procedure_name}",
+ "creation": "2024-10-10 13:27:28.340991",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "patient_info",
+  "hospital",
+  "patient_identifier",
+  "dob",
+  "patient_weight",
+  "column_break_jciyv",
+  "visit_no",
+  "patient_name",
+  "gender",
+  "patient_height",
+  "section_break_vvtiv",
+  "endoscopy_modalities",
+  "procedure_info_section",
+  "procedure_name",
+  "column_break_wagmo",
+  "procedure_deception",
+  "section_break_tt5ir",
+  "procedure_date",
+  "column_break_fw40h",
+  "procedure_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient_info",
+   "fieldtype": "Section Break",
+   "label": "Patient Info"
+  },
+  {
+   "fetch_from": "patient_identifier.hospital_id",
+   "fieldname": "hospital",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Hospital",
+   "options": "Hospitals"
+  },
+  {
+   "fieldname": "column_break_jciyv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "patient_identifier.full_name",
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "label": "Patient Name"
+  },
+  {
+   "fieldname": "procedure_info_section",
+   "fieldtype": "Section Break",
+   "label": "Procedure Info"
+  },
+  {
+   "fieldname": "procedure_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Procedure Name",
+   "options": "Endo Procedure"
+  },
+  {
+   "fetch_from": "procedure_name.procedure_deception",
+   "fieldname": "procedure_deception",
+   "fieldtype": "Data",
+   "label": "Procedure Deception"
+  },
+  {
+   "fieldname": "column_break_wagmo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_tt5ir",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "procedure_date",
+   "fieldtype": "Date",
+   "label": "Procedure Date"
+  },
+  {
+   "fieldname": "column_break_fw40h",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "procedure_time",
+   "fieldtype": "Time",
+   "label": "Procedure Time"
+  },
+  {
+   "fetch_from": "patient_identifier.dob",
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "DOB"
+  },
+  {
+   "fetch_from": "patient_identifier.gender",
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender"
+  },
+  {
+   "fieldname": "patient_identifier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Patient",
+   "options": "Patients"
+  },
+  {
+   "fieldname": "section_break_vvtiv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "endoscopy_modalities",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Endoscopy Modalities",
+   "options": "Endoscopy Modalities"
+  },
+  {
+   "fieldname": "visit_no",
+   "fieldtype": "Link",
+   "label": "Visit",
+   "options": "Visits"
+  },
+  {
+   "fetch_from": "patient_identifier.weight",
+   "fieldname": "patient_weight",
+   "fieldtype": "Data",
+   "label": "Patient Weight"
+  },
+  {
+   "fetch_from": "patient_identifier.height",
+   "fieldname": "patient_height",
+   "fieldtype": "Data",
+   "label": "Patient Height"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-23 14:03:07.918763",
+ "modified_by": "Administrator",
+ "module": "endoscopy",
+ "name": "Endo Orders",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "patient_identifier,procedure_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
