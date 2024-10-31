@@ -4,7 +4,7 @@ from requests.auth import HTTPBasicAuth
 
 @frappe.whitelist(allow_guest=True)
 def upload_file(file_path, file_name, docname):
-    url = "http://127.0.0.1:8000/api/method/upload_file"
+    url = "http://127.0.0.1/api/method/upload_file"
 
     # with open(file_path.split('.')[0] + ".txt", "r") as f:
     #     session_id = f.read()
