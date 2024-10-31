@@ -14,9 +14,13 @@
   "column_break_2pzpr",
   "hospital",
   "connection_info_section",
+  "ip_address",
+  "base_path",
+  "device_method",
   "import_path",
   "export_path",
   "column_break_xcpon",
+  "receiver_id",
   "report_path"
  ],
  "fields": [
@@ -68,11 +72,31 @@
    "fieldname": "report_path",
    "fieldtype": "Data",
    "label": "Report Path"
+  },
+  {
+   "fieldname": "device_method",
+   "fieldtype": "Data",
+   "label": "Device Method"
+  },
+  {
+   "fieldname": "receiver_id",
+   "fieldtype": "Data",
+   "label": "Receiver ID"
+  },
+  {
+   "fieldname": "ip_address",
+   "fieldtype": "Data",
+   "label": "IP Address"
+  },
+  {
+   "fieldname": "base_path",
+   "fieldtype": "Data",
+   "label": "Base Path"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-10 14:53:15.481210",
+ "modified": "2024-10-30 12:44:55.625763",
  "modified_by": "Administrator",
  "module": "endoscopy",
  "name": "Endoscopy Modalities",
